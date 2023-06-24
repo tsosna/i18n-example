@@ -8,3 +8,4 @@
 
 
 <h1>{i('welcome')}</h1>
+<p>{i("localizatiion")}</p>
