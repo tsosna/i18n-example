@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import {i, language, languages, switchLanguage} from '@inlang/sdk-js'
+</script>
+
+{#each languages as lang}
+ <button on:click={()=>switchLanguage(lang)}>{lang}</button>  
+{/each}
+
+
+<h1>{i('welcome')}</h1>
