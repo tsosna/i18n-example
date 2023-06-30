@@ -36,9 +36,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/manrope": "^5.0.3",
 		"class-variance-authority": "^0.6.0",
 		"clsx": "^1.2.1",
 		"lucide-svelte": "^0.252.0",
+		"open-props": "^1.5.10",
 		"tailwind-merge": "^1.13.2",
 		"tailwindcss-animate": "^1.0.6"
 	}
