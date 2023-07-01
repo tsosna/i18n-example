@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/manrope": "^5.0.3",
+		"@prisma/client": "^4.16.2",
 		"class-variance-authority": "^0.6.0",
 		"clsx": "^1.2.1",
 		"lucide-svelte": "^0.252.0",
