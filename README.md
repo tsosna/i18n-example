@@ -36,3 +36,109 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+# Getting Started
+
+```bash
+pnpm add -D @inlang/sdk-js
+```
+
+# Add plugin to vite.config.ts
+
+```bash
+import inlangPlugin from "@inlang/sdk-js/adapter-sveltekit"
+
+export default defineConfig({
+	plugins: [inlangPlugin(), sveltekit()]
+});
+```
+
+# Add tailwindcss
+
+```bash
+pnpx svelte-add@latest tailwindcss
+pnpm i
+```
+# Add shadcn-svelte
+
+[shadcn-svelte](https://www.shadcn-svelte.com/)
+
+> *💡Uwaga: przed tym dodaniem trzeba sprawdzić czy przypadkiem w svelte.config.js jest import { vitePreprocess } from '@sveltejs/kit/vite'; 
+Jeżeli tak to najlepiej zakomentować.*
+> 
+
+```bash
+pnpx shadcn-svelte init
+```
+
+# Install svelte-preprocess
+
+```bash
+pnpm install -D svelte-preprocess
+```
+
+# Add shadcn-svelte components (e.g. button)
+
+> *💡Uwaga: gdy zostawi się samo pnpx shadcn-svelte add to wyświetli się lista elementów*
+> 
+
+```bash
+pnpx shadcn-svelte add button
+```
+
+# Add Lucide Icon
+
+[Lucide Icons](https://lucide.dev/guide/packages/lucide-svelte)
+
+```bash
+pnpm install lucide-svelte/h
+```
+
+# Add Open Props CSS
+
+[Open Props: sub-atomic styles](https://open-props.style/)
+
+```bash
+pnpm i open-props 
+```
+
+# Add fonts
+
+[Fontsource](https://fontsource.org/)
+
+```bash
+pnpm i @fontsource/manrope
+```
+
+# .prettierrc - usuniecie średnika
+
+```bash
+.prettierrc
+{
+	"semi": false,
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 100,
+	"plugins": ["prettier-plugin-svelte"],
+	"pluginSearchDirs": ["."],
+	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+}
+```
+
+```bash
+pnpm run format
+```
+
+# Install Prisma
+
+```bash
+pnpm i @prisma/client
+pnpx prisma init
+```
+
+## Prisma Migrate
+
+```bash
+pnpx prisma migrate dev --name "Add Lang"
+```
