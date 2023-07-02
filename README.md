@@ -63,8 +63,8 @@ pnpm i
 
 [shadcn-svelte](https://www.shadcn-svelte.com/)
 
-> *💡Uwaga: przed tym dodaniem trzeba sprawdzić czy przypadkiem w svelte.config.js jest import { vitePreprocess } from '@sveltejs/kit/vite'; 
-Jeżeli tak to najlepiej zakomentować.*
+> *💡Note: before this addition, you need to check if by chance there is an import { vitePreprocess } from '@sveltejs/kit/vite' in svelte.config.js; 
+If so, it's best to comment.*
 > 
 
 ```bash
@@ -79,7 +79,7 @@ pnpm install -D svelte-preprocess
 
 # Add shadcn-svelte components (e.g. button)
 
-> *💡Uwaga: gdy zostawi się samo pnpx shadcn-svelte add to wyświetli się lista elementów*
+> *💡Note: when you leave the pnpx shadcn-svelte add alone, it shows the list of elements*.
 > 
 
 ```bash
@@ -110,7 +110,7 @@ pnpm i open-props
 pnpm i @fontsource/manrope
 ```
 
-# .prettierrc - usuniecie średnika
+# .prettierrc - removal of semicolon
 
 ```bash
 .prettierrc
